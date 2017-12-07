@@ -47,7 +47,11 @@ namespace RaceDay.WebApp.Controllers
                         horse.Bets = Mapper.Map<List<BetModel>>(horseBets);
                         if (horse.TotalBetAmount > 0)
                         {
-                            horse.TotalAmoutPayout = ((race.TotalBets / horse.TotalBetAmount) * horse.Odds);
+                            horse.TotalAmoutPayout = horse.TotalBetAmount * horse.Odds;
+                        }
+                        else
+                        {
+                            horse.TotalAmoutPayout = 0;
                         }
                     }
                 }

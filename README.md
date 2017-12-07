@@ -9,6 +9,10 @@ Architecture:
 - RaceDay.Client: Is used by RaceDay.WebApp to connect and get data from an api
 - RaceDay.WebApp: Is an MVC application that shows the Races and other details.
 
+Unit Test:
+- RaceDay.Api.Tests
+- RaceDay.BL.Test
+
 How To Setup
 - Make sure you have the following installed
  - Visual Studio 2015

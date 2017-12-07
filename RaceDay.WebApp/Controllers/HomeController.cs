@@ -49,10 +49,6 @@ namespace RaceDay.WebApp.Controllers
                         {
                             horse.TotalAmoutPayout = horse.TotalBetAmount * horse.Odds;
                         }
-                        else
-                        {
-                            horse.TotalAmoutPayout = 0;
-                        }
                     }
                 }
             }

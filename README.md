@@ -2,12 +2,12 @@
 Tech challenge
 
 Architecture:
-RaceDay.Contracts: Contains all the Service Client interface and Data transfer Objects
-RaceDay.BL: Is the Business logic layer has dependency on RaceDay.Contracts and RaceDay.Entity
-RaceDay.Entity: Is a code first entity framework to access the database
-RaceDay.Api: Is a WebApi application that has the additional endpoints
-RaceDay.Client: Is used by RaceDay.WebApp to connect and get data from an api
-RaceDay.WebApp: Is an MVC application that shows the Races and other details.
+- RaceDay.Contracts: Contains all the Service Client interface and Data transfer Objects
+- RaceDay.BL: Is the Business logic layer has dependency on RaceDay.Contracts and RaceDay.Entity
+- RaceDay.Entity: Is a code first entity framework to access the database
+- RaceDay.Api: Is a WebApi application that has the additional endpoints
+- RaceDay.Client: Is used by RaceDay.WebApp to connect and get data from an api
+- RaceDay.WebApp: Is an MVC application that shows the Races and other details.
 
 How To Setup
 - Make sure you have the following installed

@@ -22,11 +22,11 @@ How To Setup
 
 To Run the Web Api
  - On the Solution right click the RaceDay.Api project and click "Set As Startup Project"
- - Click Run/ Play button on Visual Studion
+ - Click Run/ Play button on Visual Studio
 
 To Run the Web Application/ Website
  - On the Solution right click the "RaceDay.WebApp" project and click "Set As Startup Project"
- - Click Run/Play button on Visual Studion
+ - Click Run/Play button on Visual Studio
  
  Web Api End points
  1. list of customers

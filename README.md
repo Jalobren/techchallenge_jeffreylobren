@@ -18,7 +18,7 @@ How To Setup
 - Go on "Tools/NuGet Package Manager/Package Manager Console"
 - On the Solution right click the RaceDay.Api project and click "Set As Startup Project"
 - On the console set "Default Project" on the console to "RaceDay.Entity"
-- Type in "udpate-database" to generate the tables
+- Type in "udpate-database" and press enter to generate the tables
 
 To Run the Web Api
  - On the Solution right click the RaceDay.Api project and click "Set As Startup Project"

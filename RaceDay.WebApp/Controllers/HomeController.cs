@@ -45,6 +45,10 @@ namespace RaceDay.WebApp.Controllers
                     {
                         var horseBets = raceBets.Where(x => x.HorseId == horse.Id).Select(h => h);
                         horse.Bets = Mapper.Map<List<BetModel>>(horseBets);
+                        if (horse.TotalBetAmount > 0)
+                        {
+                            horse.TotalAmoutPayout = ((race.TotalBets / horse.TotalBetAmount) * horse.Odds);
+                        }
                     }
                 }
             }

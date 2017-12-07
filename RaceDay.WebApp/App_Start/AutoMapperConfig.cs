@@ -15,7 +15,10 @@ namespace RaceDay.WebApp.App_Start
             Mapper.Initialize(config =>
             {
                 config.CreateMap<HorseDto, HorseModel>()
-                    .ForMember(dest=> dest.Bets, opt => opt.Ignore());
+                    .ForMember(dest=> dest.Bets, opt => opt.Ignore())
+                    .ForMember(dest => dest.TotalNumberOfBets, opt => opt.Ignore())
+                    .ForMember(dest => dest.TotalAmoutPayout, opt => opt.Ignore())
+                    .ForMember(dest => dest.TotalBetAmount, opt => opt.Ignore());
                 config.CreateMap<RaceDto, RaceModel>()
                     .ForMember(dest => dest.TotalBets, opt => opt.Ignore());
                 config.CreateMap<BetDto, BetModel>();

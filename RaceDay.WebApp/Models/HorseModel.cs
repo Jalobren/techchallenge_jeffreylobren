@@ -20,20 +20,21 @@ namespace RaceDay.WebApp.Models
                 return 0;
             }
         }
-        public decimal ToalPayOut
+        public decimal TotalBetAmount
         {
             get
             {
                 if (Bets != null)
                 {
-                    Decimal totalPayout = 0;
-                    Bets.ForEach(x => totalPayout += (x.Stake * Odds));
-                    return totalPayout;
-
+                    Decimal totalBetAmount = 0;
+                    Bets.ForEach(x => totalBetAmount += x.Stake);
+                    return totalBetAmount;
                 }
                 return 0;
             }        
         }
+
+        public decimal TotalAmoutPayout { get; set; }
 
     }
 }

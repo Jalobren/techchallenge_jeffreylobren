@@ -1,0 +1,24 @@
+﻿@using RaceDay.WebApp.Models;
+
+@model List<RaceModel>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Races</h2>
+
+@foreach(var race in Model)
+{
+    <div class="panel-group" id="races">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#races" href="#collapse_@race.Id">@race.Name</a></h4><span>Total Bets: $@race.TotalBets  </span><span >Status: @race.Status</span>
+            </div>
+            <div id="collapse_@race.Id" class="panel-collapse collapse">
+                <div class="panel-body">
+                    @Html.Partial("PartialViews/_HorseList", race.Horses)
+                </div>
+            </div>
+        </div>
+    </div>
+}

@@ -1,0 +1,26 @@
+﻿
+@using RaceDay.WebApp.Models;
+
+@model List<HorseModel>
+
+<h4>Horses</h4>
+
+<table>
+    <thead>
+        <tr>
+            <th width="40%">Horse</th>
+            <th width="20%">Number Of Bets</th>
+            <th width="20%">Pay out</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var horse in Model)
+        {
+            <tr>
+                <td width="40%">@horse.Name</td>
+                <td width="40%" style="text-align: center;">@horse.TotalNumberOfBets</td>
+                <td width="40%" style="text-align: center;">$@horse.ToalPayOut</td>
+            </tr>
+        }
+    </tbody>
+</table>
